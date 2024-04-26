@@ -238,7 +238,7 @@ h5 {
 
 iframe {
     width: 100%;
-    height: 100%;
+    height: 480px;
     border-radius: var(--border-radius);
 }
 
@@ -247,7 +247,6 @@ iframe {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    height: 600px;
     border-radius: var(--border-radius);
 }
 @keyframes scroll {
