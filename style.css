@@ -236,18 +236,28 @@ h5 {
     font-size: 1.6rem;
 }
 
-iframe {
-    width: 100%;
-    height: 480px;
-    border-radius: var(--border-radius);
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 2rem 0;
+    column-gap: 2rem;
+    row-gap: 4rem;
 }
 
-.map {
+.feature p:first-child{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-dark-blue);
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    border-radius: var(--border-radius);
+    justify-content: center;
+    gap: var(--icon-gap);
+    padding-bottom: 0.5rem;
+}
+
+.feature span {
+    color: var(--color-blue);
 }
 @keyframes scroll {
     0% {
@@ -301,4 +311,15 @@ iframe {
     .map {
         height: 400px;
     }
+
+    .features {
+        grid-template-columns: 1fr;
+        text-align: left;
+        row-gap: 4rem;
+    }
+
+    .feature p:first-child {
+        justify-content:flex-start;
+    }
 }
+
