@@ -23,6 +23,7 @@ body {
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -214,7 +215,7 @@ h5 {
 .service {
     display: flex;
     flex-direction: column;
-    border: solid var(--color-dark-blue) 1px;
+    box-shadow: 0 0 5px #000;
     border-radius: var(--border-radius);
 }
 
@@ -225,6 +226,7 @@ h5 {
 
 .service img {
     height: 250px;
+    border-radius: var(--border-radius);
 }
 
 .service-text {
@@ -258,6 +260,13 @@ h5 {
 
 .feature span {
     color: var(--color-blue);
+}
+
+iframe {
+    width:100%;
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 5px #000;
 }
 
 /* Aplica la animación al elemento */
