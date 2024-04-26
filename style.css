@@ -155,6 +155,7 @@ h4 {
     text-align: center;
     font-weight: 400;
     font-size: 1.8rem;
+    padding: 1rem 0;
 }
 
 .slider {
@@ -235,6 +236,20 @@ h5 {
     font-size: 1.6rem;
 }
 
+iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 600px;
+    border-radius: var(--border-radius);
+}
 @keyframes scroll {
     0% {
         -webkit-transform: translateX(0);
@@ -284,4 +299,7 @@ h5 {
         height: 200px;
     }
 
+    .map {
+        height: 400px;
+    }
 }
