@@ -259,6 +259,16 @@ h5 {
 .feature span {
     color: var(--color-blue);
 }
+
+/* Aplica la animación al elemento */
+.move-in {
+    animation: move 1s;
+}
+
+.move-down {
+    animation: move-down 1s;
+}
+
 @keyframes scroll {
     0% {
         -webkit-transform: translateX(0);
@@ -271,6 +281,25 @@ h5 {
         transform: translateX(calc(-100px * 18));
     }
 
+}
+
+/* Define la animación */
+@keyframes move {
+    from {
+        transform: translateX(-40%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes move-down {
+    from {
+        transform: translateY(40%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 @media screen and (max-width:900px) {
