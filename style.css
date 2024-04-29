@@ -391,6 +391,19 @@ iframe {
 
 .contact {
     display: flex;
+    flex-direction: column;
+    gap: var(--item-gap);
+}
+
+.contact p {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: var(--icon-gap);
+    font-weight: 700;
+    border: solid #000 1px;
+    padding: 0.5rem 2rem;
+    border-radius: var(--border-radius);
 }
 
 .contact-btn {
@@ -412,6 +425,24 @@ iframe {
 
 .contact-btn:hover{
     opacity: 0.8;
+}
+
+
+footer {
+    margin-top: 2rem;
+    background: var(--color-dark-blue);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    padding: 1rem 0;
+}
+
+footer p {
+    opacity: 0.6;
 }
 @keyframes scroll {
     0% {
@@ -510,7 +541,8 @@ iframe {
         flex-direction: column;
     }
 
-    .work-text p {
-        /* text-align: center; */
+    .workflow-info img {
+        width: 150;
+        height: 130;
     }
 }
