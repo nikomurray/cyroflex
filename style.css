@@ -389,7 +389,30 @@ iframe {
     animation: move-down 1s;
 }
 
+.contact {
+    display: flex;
+}
 
+.contact-btn {
+    margin: var(--item-gap) 0;
+    text-align: center;
+    background: var(--color-blue);
+    color: #fff;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    border-radius: var(--border-radius);
+    transition: all 0.2s;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--icon-gap);
+}
+
+
+.contact-btn:hover{
+    opacity: 0.8;
+}
 @keyframes scroll {
     0% {
         -webkit-transform: translateX(0);
