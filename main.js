@@ -35,7 +35,8 @@ const methods = [
     const element = document.getElementById(method.id);
   
     element.addEventListener("click", () => {
-      workTextTitle.textContent = element.textContent;
+      let workTitle = element.textContent.substring(3)
+      workTextTitle.textContent = workTitle;
       workText.innerHTML = method.text;
       workImage.src = method.imgSrc;
     });
