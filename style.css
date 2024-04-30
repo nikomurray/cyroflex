@@ -391,8 +391,12 @@ iframe {
 
 .contact {
     display: flex;
-    flex-direction: column;
     gap: var(--item-gap);
+    justify-content: space-around;
+    align-items: center;
+    border: solid var(--color-blue) 2px;
+    padding: 0.5rem 2rem;
+    border-radius: var(--border-radius);
 }
 
 .contact p {
@@ -400,8 +404,6 @@ iframe {
     display: flex;
     align-items: center;
     gap: var(--icon-gap);
-    font-weight: 700;
-    border: solid #000 1px;
     padding: 0.5rem 2rem;
     border-radius: var(--border-radius);
 }
@@ -551,5 +553,9 @@ footer p {
         align-items: center;
         justify-content: center;
         gap:1rem;
+    }
+
+    .contact {
+        flex-direction: column;
     }
 }
