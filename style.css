@@ -79,6 +79,12 @@ a {
     gap: var(--item-gap);
 }
 
+.top-header-sub p{
+    display: flex;
+    align-items: center;
+    gap: var(--icon-gap);
+}
+
 
 header {
     background: var(--color-white);
@@ -168,37 +174,6 @@ h4 {
     font-size: 1.8rem;
     padding: 1rem 0;
 }
-
-.slider {
-    padding: 2rem 0;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-}
-
-.slider .slide-track {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite;
-    width: calc(150px * 18);
-}
-
-.slider .slide {
-    width: 250px;
-}
-
-.slider .slide img {
-    width: 100%;
-}
-
-.cta-btn {
-    border: solid #000 1px;
-    padding: 0.5rem 2rem;
-    border-radius: var(--border-radius);
-}
-
 
 
 /* SERVICES */
