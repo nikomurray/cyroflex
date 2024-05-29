@@ -168,6 +168,13 @@ h2 span {
 }
 
 /* brands */
+.brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--item-gap);
+}
+
 h4 {
     text-align: center;
     font-weight: 400;
@@ -532,5 +539,9 @@ footer p {
 
     .contact {
         flex-direction: column;
+    }
+
+    .brands .brand img{
+        width: 140px;
     }
 }
